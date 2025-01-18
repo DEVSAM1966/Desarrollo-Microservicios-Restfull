@@ -1,0 +1,11 @@
+CONTROL DE VERSIONES.
+----------------------
+
+Desarrollo-Microservicios-Restfull (directorio).
+12/01/2025 - VERSIÓN 1 (INICIAL).
+12/01/2025 - product-microservice (1 programa Spring Boot + MongoDB - funciona)
+13/01/2025 - booking-microservice (2 programa Spring Boot + MySQL - funciona, pero Wanna lo dejo a lo minimo)
+14/01/2025 - discovery-service (3 programa Spring Cloud - funciona )
+17/01/2025 - service-configuration (4 Es un directorio donde esta el resto de programas para guardar los PROPERTIES de los microservicios - funciona)
+18/01/2025 - config-server (5 programa Config Server de Spring Cloud - )
+18/01/2025 - fichero-zip (para guardar los ficheros zip generado por https://start.spring.io)
