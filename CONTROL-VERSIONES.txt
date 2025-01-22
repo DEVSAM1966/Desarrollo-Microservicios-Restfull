@@ -3,9 +3,26 @@ CONTROL DE VERSIONES.
 
 Desarrollo-Microservicios-Restfull (directorio).
 12/01/2025 - VERSIÓN 1 (INICIAL).
-12/01/2025 - product-microservice (1 programa Spring Boot + MongoDB - funciona)
-13/01/2025 - booking-microservice (2 programa Spring Boot + MySQL - funciona, pero Wanna lo dejo a lo minimo)
-14/01/2025 - discovery-service (3 programa Spring Cloud - funciona )
-17/01/2025 - service-configuration (4 Es un directorio donde esta el resto de programas para guardar los PROPERTIES de los microservicios - funciona)
-18/01/2025 - config-server (5 programa Config Server de Spring Cloud - )
+
+12/01/2025 - product-microservice (1º programa Spring Boot + MongoDB - funciona).
+		15/01/2025 --> Añadido cliente Eureka para el Discovery Server.
+		20/21 --> Añadido el cliente para el Config Server.
+		21/22 --> Se añadio Getters & Setter manuales en la clase ProductEntity.java Lombok no funciona del todo.
+		22/01/2025 --> Se añadio la libreria actuator, CategoryController y otras configuraciones en bootstrap.properties y
+		applications.properties.		
+
+13/01/2025 - booking-microservice (2º programa Spring Boot + MySQL - funciona, pero Wanna lo dejo a lo minimo)
+		15/01/2025 --> Añadido cliente Eureka para el Discovery Server.
+		20/21 --> Añadido el cliente para el Config Server.
+		22/01/2025 --> Se añadio la libreria actuator y otras configuraciones en bootstrap.properties y
+		applications.properties.
+		
+14/01/2025 - discovery-service (3º programa Spring Cloud - funciona )
+
+17/01/2025 - service-configuration (4º Es un directorio donde esta el resto de programas para guardar los PROPERTIES de los microservicios - funciona)
+		17/01/2025 --> Se crea el repositorio GitHub (propetario DEVSAM1966) para guardar los properties.
+
+18/01/2025 - config-server (5º programa Config Server de Spring Cloud - OK)
+		22/01/2025 --> Se termina completamente.
+
 18/01/2025 - fichero-zip (para guardar los ficheros zip generado por https://start.spring.io)
