@@ -5,24 +5,52 @@ Desarrollo-Microservicios-Restfull (directorio).
 12/01/2025 - VERSIÓN 1 (INICIAL).
 
 12/01/2025 - product-microservice (1º programa Spring Boot + MongoDB - funciona).
+		HISTORICO DE CAMBIOS.
+		.....................
 		15/01/2025 --> Añadido cliente Eureka para el Discovery Server.
 		20/21 --> Añadido el cliente para el Config Server.
 		21/22 --> Se añadio Getters & Setter manuales en la clase ProductEntity.java Lombok no funciona del todo.
 		22/01/2025 --> Se añadio la libreria actuator, CategoryController y otras configuraciones en bootstrap.properties y
-		applications.properties.		
+		applications.properties.
+		Añadido la dependencia spring-cloud-starter-bus-amqp (servira las publicaciones con Message Broker).		
 
 13/01/2025 - booking-microservice (2º programa Spring Boot + MySQL - funciona, pero Wanna lo dejo a lo minimo)
+		HISTORICO DE CAMBIOS.
+		.....................
 		15/01/2025 --> Añadido cliente Eureka para el Discovery Server.
 		20/21 --> Añadido el cliente para el Config Server.
 		22/01/2025 --> Se añadio la libreria actuator y otras configuraciones en bootstrap.properties y
 		applications.properties.
+		24/01/2025 --> Añadido la dependencia spring-cloud-vault-config, añadir llaves de conexión a Vault en bootstrap.properties.
+		Añadido la dependencia spring-cloud-starter-bus-amqp (servira las publicaciones con Message Broker).
 		
 14/01/2025 - discovery-service (3º programa Spring Cloud - funciona )
 
-17/01/2025 - service-configuration (4º Es un directorio donde esta el resto de programas para guardar los PROPERTIES de los microservicios - funciona)
+17/01/2025 - service-configuration (4º Es un directorio donde esta el resto de programas para guardar los PROPERTIES de los microservicios - funciona).
+		HISTORICO DE CAMBIOS.
+		.....................
 		17/01/2025 --> Se crea el repositorio GitHub (propetario DEVSAM1966) para guardar los properties.
+		24/01/2025 --> Añadir booking-microservice.json para enviar datos secretos a Vault.
 
-18/01/2025 - config-server (5º programa Config Server de Spring Cloud - OK)
+18/01/2025 - config-server (5º programa Config Server de Spring Cloud - OK).
+		HISTORICO DE CAMBIOS.
+		.....................
 		22/01/2025 --> Se termina completamente.
 
-18/01/2025 - fichero-zip (para guardar los ficheros zip generado por https://start.spring.io)
+18/01/2025 - fichero-zip (6º Directorio para guardar los ficheros zip generado por https://start.spring.io).
+
+23/01/2025 - vault (7º Directorio para contener el contenedor Vault, se genera un contenedor Docker para tener el servidor Vault - funciona).
+		HISTORICO DE CAMBIOS.
+		.....................
+		24/01/2025 --> Para añadir valores en el contenedor secreto deberemos de lanzar estos comandos en el directorio de trabajo, tras arrancar el contendor docker de Vault:
+		vault kv put secret/booking-microservice @booking-microservice.json
+		vault kv put secret/product-microservice @product-microservice.json
+
+24/01/2025 - rabbitMQ (8º Instalación con Docker - ).
+		HISTORICO DE CAMBIOS.
+		.....................
+		24/01/2025 --> Para arrancar en local el contenedor docker de RabbitMQ, lanzar (lo deberemos de hacer siempre):
+		docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:4.0-management
+
+
+
